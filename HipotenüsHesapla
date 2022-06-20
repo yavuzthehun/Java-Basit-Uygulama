@@ -1,0 +1,23 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class HipotenusHesapla {
+    public static void main(String[] args) {
+        System.out.println("Dik Üçgen Programına Hoşgeldiniz....");
+        System.out.print("Lütfen ilk kenarı giriniz:");
+        Scanner scan = new Scanner(System.in);
+        int x=scan.nextInt();
+        System.out.print("Lütfen ikinci kenarı giriniz:");
+        int y=scan.nextInt();
+        System.out.print("Lütfen üçüncü kenarı giriniz:");
+        int z=scan.nextInt();
+        int cevre=x+y+z;
+        System.out.println("Üçgenin Çevresi ="+(cevre));
+        int u=cevre/2;
+        double alan;
+        alan=Math.sqrt(u*(u-x)*(u-y)*(u-z));
+        System.out.println(alan);
+
+    }
+}
