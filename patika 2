@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class KdvProgrami {
+    public static void main(String[] args) {
+        System.out.println("Programa Hoşgeldiniz");
+        System.out.print("Lütfen Kdv hesaplanması istenen tutarı giriniz:");
+        Scanner scan =new Scanner(System.in);
+        int tutar=scan.nextInt();
+        double kdv;
+        if(tutar>0&&tutar<1000){
+            System.out.println("Kdv oranı %18 olarak alınacaktır.");
+            kdv=tutar*0.18;
+            System.out.println(kdv);
+        }
+        else{
+            System.out.println("Kdv oranı %8 olarak alınacaktır.");
+            kdv=tutar*0.08;
+            System.out.println(kdv);
+        }
+
+    }
+}
