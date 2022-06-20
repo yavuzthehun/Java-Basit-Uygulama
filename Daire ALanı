@@ -1,0 +1,19 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class DaireProgrami {
+    public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+        System.out.println("Programa Hoşgeldiniz.");
+        System.out.print("Lütfen daire Yarıçapını giriniz :");
+        int r=scan.nextInt();
+        System.out.print("Lütfen daire merkez açısını giriniz :");
+        int a=scan.nextInt();
+        double pi=3.14;
+        double alan=(pi*(r*r)*a)/360;
+        System.out.println("Daire alanı : "+alan);
+
+
+    }
+}
