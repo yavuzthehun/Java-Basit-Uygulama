@@ -1,0 +1,27 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class Baslangic {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Lütfen Matematik notunuzu giriniz :");
+        int mat1=scan.nextInt();
+        System.out.println("Lütfen Fizik notunuzu giriniz :");
+        int fiz1=scan.nextInt();
+        System.out.println("Lütfen Kimya notunuzu giriniz :");
+        int kim1=scan.nextInt();
+        System.out.println("Lütfen Türkçe notunuzu giriniz :");
+        int tr1=scan.nextInt();
+        System.out.println("Lütfen Tarih notunuzu giriniz :");
+        int tarih1=scan.nextInt();
+        System.out.println("Lütfen Müzik notunuzu giriniz :");
+        int msc1=scan.nextInt();
+
+        int sonuc =(mat1+fiz1+kim1+tr1+tarih1+msc1)/6;
+        String str=(sonuc>60)?"Sınıfı Geçtiniz.":"Sınıfta Kaldınız.";
+        System.out.println(str);
+
+
+    }
+}
