@@ -1,0 +1,24 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class Manav {
+    public static void main(String[] args) {
+        System.out.println("HOşgeldiniz.....");
+        System.out.print("Ürün Fiyatları Aşağıdaki gibidir :\n Armut :2.14TL\n Elma :3.67TL\n Domates :1.11TL" +
+                "\n Muz :0.95TL\n Patlıcan :5.00TL");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("\nArmut kaç kilo almak istersiniz:");
+        double a=scan.nextDouble();
+        System.out.print("Elma kaç kilo almak istersiniz:");
+        double e=scan.nextDouble();
+        System.out.print("Domates kaç kilo almak istersiniz:");
+        double d=scan.nextDouble();
+        System.out.print("Muz kaç kilo almak istersiniz:");
+        double m=scan.nextDouble();
+        System.out.print("Patlıcan kaç kilo almak istersiniz:");
+        double p=scan.nextDouble();
+        System.out.println("Toplam Tutarınız :"+(a*2.14+e*3.67+d*1.11+m*0.95+p*5));
+
+    }
+}
